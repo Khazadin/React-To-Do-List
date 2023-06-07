@@ -1,38 +1,83 @@
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.inputBar {
+  width: 30vw;
+  height: 7vh;
+  border-radius: 5px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-size: 1.2em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttonImp {
+  margin-left: 20px;
+  height: 5vh;
+  width: 10vw;
+  border: none;
+  background-color: rgb(19, 19, 19);
+  color: aliceblue;
+  border-radius: 5px;
+}
+.buttonImp:hover {
+  opacity: 0.9;
+}
+.buttonImp:active {
+  background-color: white;
+  color: rgb(19, 19, 19);
+  border: solid rgb(19, 19, 19);
+  box-shadow: inset 0px 0px 2px rgb(19, 19, 19);
+}
+.inpBut {
+  margin-bottom: 30px;
+}
+.noteBook {
+  width: 80vw;
+  overflow: hidden;
+  min-height: 10vh;
+  background-color: pink;
+  border-radius: 10px;
+}
+.taskBlock {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  color: black;
+  border-radius: 10px;
+}
+.taskChild {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-size: 1.2em;
+}
+.finishButton {
+  height: 5vh;
+  width: 10vw;
+  border: solid thin;
+  border-radius: 5px;
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.finishButton:hover {
+  background-color: white;
+  color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.finishButton:active {
+  opacity: 0.8;
+}
+hr {
+  width: 95%;
+  border: solid thin;
 }
